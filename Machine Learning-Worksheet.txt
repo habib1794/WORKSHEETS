@@ -1,0 +1,181 @@
+MACHINE LEARNING
+WORKSHEET – 1
+
+In Q1 to Q7, only one option is correct, Choose the correct option:
+
+1. The value of correlation coefficient will always be:
+A) between 0 and 1 B) greater than -1
+C) between -1 and 1 D) between 0 and -1
+
+Ans: C(between -1 and 1)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+2. Which of the following cannot be used for dimensionality reduction?
+A) Lasso Regularisation B) PCA
+C) Recursive feature elimination D) Ridge Regularisation
+
+Ans: D(Ridge)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+3. Which of the following is not a kernel in Support Vector Machines?
+A) linear B) Radial Basis Function
+C) hyperplane D) polynomial
+
+ANS: C(hyperplane)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+A) Logistic Regression B) Naïve Bayes Classifier
+C) Decision Tree Classifier D) Support Vector Classifier
+
+Ans: A(Logistic Regression)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents
+weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+(1 kilogram = 2.205 pounds)
+A) 2.205 × old coefficient of ‘X’ B) same as old coefficient of ‘X’
+C) old coefficient of ‘X’ ÷ 2.205 D) Cannot be determined
+
+Ans:A( 2.205 × old coefficient of ‘X’ )
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+A) remains same B) increases
+C) decreases D) none of the above
+
+Ans B(increases)
+-----------------------------------------------------------------------------------------------------------------------------------------
+7. Which of the following is not an advantage of using random forest instead of decision trees?
+A) Random Forests reduce overfitting
+B) Random Forests explains more variance in data then decision trees
+C) Random Forests are easy to interpret
+D) Random Forests provide a reliable feature importance estimate
+
+Ans: (C9) 
+-----------------------------------------------------------------------------------------------------------------------------------------
+In Q8 to Q10, more than one options are correct, Choose all the correct options:
+
+8. Which of the following are correct about Principal Components?
+A) Principal Components are calculated using supervised learning techniques
+B) Principal Components are calculated using unsupervised learning techniques
+C) Principal Components are linear combinations of Linear Variables.
+D) All of the above
+
+ANS: (D)
+------------------------------------------------------------------------------------------------------------------------------------------
+9. Which of the following are applications of clustering?
+A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty
+index, employment rate, population and living index
+B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts.
+C) Identifying spam or ham emails
+D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels.
+
+ANS: (B,C)
+------------------------------------------------------------------------------------------------------------------------------------------
+10. Which of the following is(are) hyper parameters of a decision tree?
+A) max_depth B) max_features
+C) n_estimators D) min_samples_leaf
+
+Ans: (A,B,D)
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Q11: What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection
+
+Outliers are the extreme values that deviates from the other observations on the data.
+Outliers is an observation that diverges from an overall pattern on sample
+
+Outliers are of two kinds
+.>Univariate Outliers
+.>Multivariate Outliers
+
+Univariate Outliers are found when looking at the distribution of values in a single feature space
+
+Multivariate Outliers are found when looking at the distribution of values in a n-dimensional space
+
+The Box Plot Uses Inter Quartile Range to detect outliers.
+We need to determine Quartile1(Q1) and Quartile3(Q3)
+
+IQR=Q3-Q1
+
+Upper-Limit- Q3+1.5*IQR
+
+Lower-Limit- Q3+1.5*IQR
+
+Anything below the lower limit and above the upper limit will be considered as outliers.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Q12:What is the primary difference between bagging and boosting algorithms?
+
+Bagging and Boosting are the two types of the Ensemble Learning where weak learner are combined to create a strong learner
+These two techniques decrease the variance of the single estimate as they combine several estimates from diffrent models
+
+Bagging is also called Bootstrap Aggregation where Bootstrap refers to sampling with replacement
+
+The primary difference between Bagging and Boosting is that in Bagging every model is trained in parellel and in Boosting it uses the concept of assigning the more weights to the misclaasified points.So Boosting uses the sequential approach instead of parallel approach in bagging
+
+
+When to use Bagging and boosting 
+
+>If the difficulty of the single model is overfitting,then Bagging is the best option
+
+>If the problem is that the single model gets a very low performance that than the Boosting could generate a combined model by lowering the  errors
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Q13:What is adjusted R^2 in logistic regression. How is it calculated?
+
+R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. If you add more and more useless variables to a model, adjusted r-squared will decrease. If you add more useful variables, adjusted r-squared will increase.
+Adjusted R2 will always be less than or equal to R2.
+
+The formula is:
+Adjusted R^2= [(1-R^2)(n-1)/n-k-1]
+where:
+
+N is the number of points in your data sample.
+K is the number of independent regressors, i.e. the number of variables in your model, excluding the constant.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Q14:What is the difference between standardisation and normalisation?
+
+
+Normalization:
+Normalization is used to scale the variables to have a values between 0 and 1
+
+Standardisation:
+Standardisation is used to transform the data to have a mean of 0 and standard deviation of 1
+
+Standardisation or scaling of the data is normally used in convolutinal or artificial neural network or K nearest Neighbors where data follows Gaussian Distribution
+
+Normalization of the data is good to use when your data does not follows Gaussian Distribution
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Q15:. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation
+
+Cross Validation 
+
+Croos Validation is the technique where we reserve the particular sample of the dataset on which you do not train the model. That reserver test is used for testiong of the model
+
+Methods used for Cross validation
+
+>LOOCV(Leave one out cross validation)
+
+>K-fold Cross Validation
+
+Advantage of using Cross- Validation
+
+>I help in letting know whether our model is underfitted or overfitted.
+
+
+Disadvantage of using Cross- Validation
+
+>Large Dataset takes more time to validate the data
+
+
+-----------------------------------------------------------xxxxxxx-----------------------------------------------------------------------
+
+
+
