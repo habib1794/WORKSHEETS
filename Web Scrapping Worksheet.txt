@@ -1,0 +1,172 @@
+WEB SCRAPING 
+
+WORKSHEET – 1 
+
+
+
+In Q1 to Q9, only one option is correct, Choose the correct option: 
+
+Q1)Which of the following extracts information from user generated content? 
+
+A) Java script taggingB) Web scraping 
+
+C) A/B testingD) MROCs 
+
+
+Ans: B(Web Scrapping)
+
+
+Q2)Which of the following is not a web scraping library in python? 
+
+A) seleniumB) Beautiful soup 
+
+C) RequestsC) scrapy 
+
+
+Ans: D(scrapy)
+
+
+Q3)Selenium tests __________? 
+
+A) Browser based applicationsB) DOS applications 
+
+C) GUI applicationsD) All of the above 
+
+
+Ans: A(Browser based applications)
+
+
+Q4)Task of crawling is performed by a complex software which is known as: 
+
+A) ScraperB) Crawler 
+
+C) BoatD) Spider 
+
+Ans: B(Crawler)
+
+
+Q5)Which of the following commands is used to access name of a tag in Beautiful Soup? 
+
+A) tag.attrsB) tag.name 
+
+C) tag,idC) tag[‘id’] 
+
+
+Ans: C(tag,id)
+
+
+Q6)Which of the following is the default parser in Beautiful Soup? 
+
+A) html.parserB) html5lib 
+
+C) lxmlD) lxml-xml 
+
+
+Ans: C(lxml)
+
+
+Q7)In selenium the webdriver is used to? 
+
+A) design a test using selenese 
+
+B) test a web application on firefox only 
+
+C) execute tests on HtmlUnit browser 
+
+D) to download any content from a webpage 
+
+
+Ans: (A )
+
+
+Q8)In selenium, driver.find_elements_by_xpath(‘given xpath’) returns: 
+
+A) the first webelement associated with the ‘given xpath’ 
+
+B) the url of first webelement associated with the ‘given xpath’ 
+
+C) the list of all webelements associated with the ‘given xpath’ 
+
+D) all the attributes of the first webelement associated with the ‘given xpath’
+
+ 
+Ans: C(the list of all webelements associated with the ‘given xpath’)
+
+
+Q9)The script ‘window.scrollBy(0,a) scrolls the webpage by? 
+
+A) ‘a’ number of horizontal spaces 
+
+B) ‘a’ number of lines 
+
+C) ‘a’ number of pixels horizontally 
+
+D) ‘a’ number of pixels vertically 
+
+
+Ans: D(‘a’ number of pixels vertically)
+
+
+In Q10, more than one options are correct, Choose all the correct options: 
+
+Which of the following is(are) tags of HTML? 
+
+A) <a>B) <b> 
+
+C) <image>D) <href> 
+
+Ans: (A,B)
+
+Q11 to Q13 are subjective answer type questions, Answer them briefly.
+ 
+
+Q11:) What is the main difference between a web scraper and a web crawler? 
+
+Ans: Web crawler are basically focuses on indexing the web pages while web scrapper is used to extract the data from the webpages. Web crawlers works by browsing to series of the webpages and analyzing their contents for links to other webpages and then other page analyzes the link to other pages. This help in understanding teh structure of the Web. Web scrapper is used to download the content the from that web page.
+
+
+Q12:) What is ‘robots.txt’ file? What is the use of ‘robots.txt’ file? 
+
+Ans: The robots.txt file tells search engine crawlers which pages or file the crawler can or cannot request from your site.It is used to avoid overloading your site with requests
+
+The robots.txt file primarily uses to manage the crawler traffic to your site
+
+We can use robots.txt to manage crawl traffic, and also to prevent image, video, and audio files from appearing in Google search results. 
+
+
+Q13:)What are static and dynamic web pages? 
+
+Ans: 1)The static web pages display the same content every time the users visits while in dynamic pages contents changes according to user
+     2)The static webpages take less time to load while dymamic pages take more time to load
+     3)The static webpages does not have the database at the server end on while the dynamic pages have the database on teh server end
+     4)The static web pages involves technology such as HTML,CSS, Javascript while dynamic pages are created using CGI(common gateway interface) and languages like AJAX,Perl,PHP
+     
+
+
+Q14 and Q15 are programming practice questions. Solve it using JUPYTER NOTEBOOK and paste the solution in your answer sheets. 
+
+Q14:)Write a python program to check whether a webpage contains a title or not. 
+
+from selenium import webdriver
+import os
+
+driver=webdriver.Chrome(executable_path='chromedriver.exe')
+
+my_page=driver.get('https://www.flipkart.com/search?q=sarees&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off')
+
+if driver.title=='None':
+    print("The webpage does not have the Title")
+else:
+    print("The Title of the webpage is: ",driver.title)
+
+
+Q15:)Write a python program to access the search bar and search button on images.google.com. 
+
+from selenium import webdriver
+import os
+
+driver=webdriver.Chrome(executable_path='chromedriver.exe')
+
+searchbar=driver.find_elements_by_xpath("//div[@class='pR49Ae gsfi']")
+
+searchbutton=driver.find_elements_by_xpath("//button[@class='Tg7LZD']")
