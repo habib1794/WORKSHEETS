@@ -1,0 +1,103 @@
+								WORKSHEET 2
+								    PYTHON
+
+Q1 to Q8 have only one correct answer. Choose the correct option to answer your question.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Which of the following is not a core datatype in python?
+A) list B) struct
+C) tuple C) set
+
+Ans: (B)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Which of the following is an invalid variable name in python?
+A) _init_ B) no_1
+C) 1_no D) _1
+
+Ans:)  (A)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Which one of the following is a keyword in python?
+A) in B) _init_
+C) on D) foo
+
+Ans:) (A)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. In which of the following manner are the operators of the same precedence executed in python?
+A) Left to Right B) BODMAS
+C) Right to Left D) None of these
+
+Ans:) (A)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Arrange the following in decreasing order of the precedence when they appear in an expression in python?
+i) Multiplication ii) Division iii) Exponential iv) Parentheses
+A) iii – iv – ii – i B) iii – iv – i – ii
+C) iv – iii – ii – i D) iii – ii – i – iv
+
+Ans:) (C)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. (28//6)**3/3%3 = ?
+A) 7.1111… B) 0
+C) 0.3333… D) 1
+
+Ans:) (C)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7. Which of the following is not equal to x16 ?
+A) x**4**4 B) x**16
+C) x^16 D) (x**4)**4
+
+Ans:) (C)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8. a = input(“Enter an integer”). What will be the data type of a?
+A) int B) str
+C) float D) double
+
+Ans:) (B)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+Q9. Which of the following statements are correct?
+A) Division and multiplication have same precedence in python
+B) Python’s operators’ precedence is based on PEDMAS
+C) Python’s operators’ precedence is based on VBODMAS
+D) In case of operators’ having same precedence, the one on the left side is executed first.
+
+Ans:) (A,B,D)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q10. Which of the following is(are) valid statement(s) in python?
+A) abc = 1,000,000 B) a b c = 1000 2000 3000
+C) a,b,c = 1000, 2000, 3000 D) a_b_c = 1,000,000
+
+Ans:) (A,C,D)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q11:Differentiate between a list, tuple, set and dictionary.
+
+Ans:)
+
+List is the common datatype that are highly flexible.It can store sequence of objects that are mutable 
+List and sets are mutable while tuples are immutable
+List are enclosed in square brackets while tuples and set are enclose in parenthesis
+List are not much fast as tupleas and sets.
+Sets are the collection of unique element which avoids the duplication of element in your list
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q12:) . Are strings mutable in python? Suppose you have a string “I+Love+Python”, write a small code to replace ‘+’
+with space in python.
+
+Ans:) Strings are immutable in python
+
+string= "I+Love+Python"
+string.replace("+", "'  '")
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q13:)What does the function ord() do in python? Explain with example. Also, write down the function for getting
+the datatype of a variable in python.
+
+Ans:)  ord() is used to convert the character to their integer values
+
+list=['a','b','c']
+k=list[0]
+ord(k)
+
+result- 97
+
+type(k) - The type is stringStr
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q14 and Q15 are solved in Jupyter notebook and is attached
