@@ -1,0 +1,61 @@
+								WORKSHEET-1
+								DEEP LEARNING
+Q1) (B)
+Q2) (D)
+Q3) (C)
+Q4) (A)
+Q5) (A)
+Q6) (C)
+Q7) (D)
+Q8) (A)
+Q9)(A,B,D)
+Q10)(B,D)
+
+Q11.) What is Deep Learning?
+
+Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks.
+
+Deep learning is an AI function that mimics the workings of the human brain in processing data for use in detecting objects, recognizing speech, translating languages, and making decisions.
+Deep learning AI is able to learn without human supervision, drawing from data that is both unstructured and unlabeled.
+Deep learning can be used to help detect fraud or money laundering, among other functions.
+Deep learning unravels huge amounts of unstructured data that would normally take humans decades to understand and process.
+
+Q12. )What is reinforcement learning?
+
+Reinforcement learning is the training of machine learning models to make a sequence of decisions. The agent learns to achieve a goal in an uncertain, potentially complex environment. In reinforcement learning, an artificial intelligence faces a game-like situation. The computer employs trial and error to come up with a solution to the problem. To get the machine to do what the programmer wants, the artificial intelligence gets either rewards or penalties for the actions it performs. Its goal is to maximize the total reward.Although the designer sets the reward policy–that is, the rules of the game–he gives the model no hints or suggestions for how to solve the game. It’s up to the model to figure out how to perform the task to maximize the reward, starting from totally random trials and finishing with sophisticated tactics and superhuman skills. By leveraging the power of search and many trials, reinforcement learning is currently the most effective way to hint machine’s creativity. In contrast to human beings, artificial intelligence can gather experience from thousands of parallel gameplays if a reinforcement learning algorithm is run on a sufficiently powerful computer infrastructure.
+
+Q13:)13. What Are the Differences Between Machine Learning and Deep Learning?
+
+The most important difference between deep learning and traditional machine learning is its performance as the scale of data increases. When the data is small, deep learning algorithms don’t perform that well. 
+
+Deep learning algorithms heavily depend on high-end machines, contrary to traditional machine learning algorithms, which can work on low-end machines. This is because the requirements of deep learning algorithm include GPUs which are an integral part of its working.
+
+In Machine learning, most of the applied features need to be identified by an expert and then hand-coded as per the domain and data type while Deep learning algorithms try to learn high-level features from data. This is a very distinctive part of Deep Learning and a major step ahead of traditional Machine Learning. Therefore, deep learning reduces the task of developing new feature extractor for every problem. Like, Convolutional NN will try to learn low-level features such as edges and lines in early layers then parts of faces of people and then high-level representation of a face. 
+
+Usually, a deep learning algorithm takes a long time to train. This is because there are so many parameters in a deep learning algorithm that training them takes longer than usual.
+
+Q14.) What is a perceptron?
+
+A neural network is an interconnected system of perceptrons, so it is safe to say perceptrons are the foundation of any neural network. Perceptrons can be viewed as building blocks in a single layer in a neural network, made up of four different parts:
+1)Input Values or One Input Layer
+2)Weights and Bias
+3)Net sum
+4)Activation function
+A neural network, which is made up of perceptrons, can be perceived as a complex logical statement (neural network) made up of very simple logical statements (perceptrons); of “AND” and “OR” statements. A statement can only be true or false, but never both at the same time. The goal of a perceptron is to determine from the input whether the feature it is recognizing is true, in other words whether the output is going to be a 0 or 1. A complex statement is still a statement, and its output can only be either a 0 or 1.
+
+
+Q15. )What’s the difference between AI and ML?
+
+AI is a bigger concept to create intelligent machines that can simulate human thinking capability and behavior, whereas, machine learning is an application or subset of AI that allows machines to learn from data without being programmed explicitly.
+
+The Artificial intelligence system does not require to be pre-programmed, instead of that, they use such algorithms which can work with their own intelligence. It involves machine learning algorithms such as Reinforcement learning algorithm and deep learning neural networks. AI is being used in multiple places such as Siri, Google?s AlphaGo, AI in Chess playing, etc.
+
+Based on capabilities, AI can be classified into three types:
+
+.-->Weak AI
+.-->General AI
+.-->Strong AI
+
+Currently, we are working with weak AI and general AI. The future of AI is Strong AI for which it is said that it will be intelligent than humans.
+
+
