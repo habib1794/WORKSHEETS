@@ -1,0 +1,42 @@
+Q1:)create table Customers( CustomerNumber int primary key,CustomerName  varchar(25),contactLastName varchar(25), contactFirstName varchar(25), phone int,addressLine1 varchar(25),addressLine2 varchar(25),city varchar(15) ,state varchar(15),postalCode  varchar(25),country  varchar(25),salesRepEmployeeNumber  int unique,creditLimit varchar(25))
+
+Q2:)Create table orders (orderNumber int primary key,orderDate Date,requiredDate Date,shippedDate Date,status varchar(25),comments varchar(25),customerNumber int,  Foreign key(customerNumber) references customers(customerNumber))
+
+Q3:)select * from orders;
+
+Q4:)select comments from orders ;
+
+Q5:)select orders.orderDate,sum(orderdetails.quantityOrdered) from orders inner join orderdetails on orders.orderNumber=orderdetails.orderNumber
+
+Q6:)select customers.customerName,employees.firstName,employees.lastName from customers inner join employees on customers.salesRepEmployeeNumber=employees.employeeNumber
+
+Q7:)select orders.orderNumber,customers.customerName from orders left outer join customers on orders.customerNumber=customers.customerNumber;
+
+Q8:) select customers.customerName,(select concat (lastName,' ',first Name) as Name) from employees inner join customers on customers.salesRepEmployeeNumber=employees.employeeNumber 
+
+Q9:)select distinct paymentDate,sum(amount) from payments 
+
+Q10:)select productName,ProductDescription,MSRP from products;
+
+Q11:) select product.productName,productDescription from products inner join orderdetails on product.productCode=orderdetails.productCode order by orderdetails.quantityOrdered desc limit 1
+
+Q12:) select customers.city from customers inner join orders on orders.customerNumber=customers.customerNumber inner join orderdetails on orderdetails.orderNumber=orders.orderNumber order by orderdetails.quantityOrdered desc limit 1
+
+Q13:) select distinct state from customers order by count(customerNumber) desc
+
+Q14)select employeeNumber,(select concat (lastName,' ',first Name) as Name) from employees
+
+Q15:)select orderdetails.orderNumber,customers.customerName ,orderdetails.priceEach*orderdetails.quantityOrdered as amount from orderdetails inner join orders on orderdetails.orderNumber=orders.orderNumber   inner join customers on orders.customerNumber=customers.customerNumber
+
+select product.productName,product.productDescription ,orderdetails.quantityOrdered from products inner join orderdetails where product.productcode=orderdetails.productcode order by quantityOrdered desc;
+
+create table orderdetails(orderNumber int ,productCode int unique,quantityOrdered int ,priceEach float,orderLineNumber int)
+
+alter table orderdetails add foreign key(orderNumber) reference orders(orderNumber);
+
+
+
+
+
+
+
