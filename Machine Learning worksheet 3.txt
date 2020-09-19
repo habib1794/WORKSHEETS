@@ -1,0 +1,153 @@
+Q1)
+Gaussian RBF(Radial Basis Function) is another popular Kernel method used in SVM models for more. RBF kernel is a function whose value depends on the distance from the origin or from some point. Gaussian Kernel is of the following format
+
+In the polynomial kernel, we simply calculate the dot product by increasing the power of the kernel.
+
+
+
+Q2)
+R2 means: It represents the proportion of the variance in your data which is explained by your model; the closer to one, the better the fit.
+
+RSS: The residual sum of squares (RSS) is the sum of the squared distances between your actual versus your predicted values:
+
+RSS=∑(yi−yj)^2
+
+Where yi is a given datapoint and yj is your fitted value for yi.
+
+The actual number you get depends largely on the scale of you
+
+The actual number you get depends largely on the scale of your response variable. Taken alone, the RSS isn't so informative.So the R2 is the better measure for goodness
+
+Q3)
+
+The Total SS (TSS or SST) tells you how much variation there is in the dependent variable.
+
+TSS(Total Sum of Squares)= ∑(yi−ymean)^2
+
+It is the sum of the squared differences between the actual Y and the predicted Y
+
+RSS(Residual Sum of squares)= ∑(yi−y(hat))^2
+
+The Explained SS tells you how much of the variation in the dependent variable your model explained.
+
+ESS (Explained Sum of Squares)= ∑(y(hat)−ymean)^2
+
+yhat- value estimated by the regression
+ 
+
+Q4)
+
+Gini Impurity is the probability of incorrectly classifying a randomly chosen element in the dataset if it were randomly labeled according to the class distribution in the dataset. It’s calculated as
+
+Gi=∑(1 to C)[ P(i)(1-P(i))]
+
+C- Number of classes
+
+where C is the number of classes and p(i) is the probability of randomly picking an element of class i
+
+When training a decision tree, the best split is chosen by maximizing the Gini Gain, which is calculated by subtracting the weighted impurities of the branches from the original impurity.
+
+
+Q5)
+In decision trees regularization can be done by pruning the tree. If left to its own device the tree can continue to fit till each data point is a different leaf in the tree. This obviously will not generalize well so you have to put in different criteria to stop splitting the nodes beyond a point. This can be done by specifying how many minimum data points are needed at each node for splitting (There can be various similar criteria).
+
+In broader sense, Regularization (as any means to prevent overfit) for Trees is done by:
+
+>limit max. depth of trees
+>ensembles / bag more than just 1 tree
+>set stricter stopping criterion on when to split a node further (e.g. min gain, number of samples etc.)
+
+Q6)
+Ensemble methods are techniques that create multiple models and then combine them to produce improved results.
+
+Basic Ensemble techniques
+
+1)Max Voting-In this technique, multiple models are used to make predictions for each data point. The predictions by each model are considered as a ‘vote’. The predictions which we get from the majority of the models are used as the final prediction.
+2)Averaging- In this method, we take an average of predictions from all the models and use it to make the final prediction
+3)Weighted Averaging- This is an extension of the averaging method. All models are assigned different weights defining the importance of each model for prediction. 
+
+Advanced Ensemble techniques
+>Stacking
+>Blending
+> Bagging
+>Boosting
+
+Q7)
+
+Bagging and Boosting are the two types of the Ensemble Learning where weak learner are combined to create a strong learner
+These two techniques decrease the variance of the single estimate as they combine several estimates from diffrent models
+
+Bagging is also called Bootstrap Aggregation where Bootstrap refers to sampling with replacement
+
+The primary difference between Bagging and Boosting is that in Bagging every model is trained in parellel and in Boosting it uses the concept of assigning the more weights to the misclaasified points.So Boosting uses the sequential approach instead of parallel approach in bagging
+
+
+When to use Bagging and boosting 
+
+>If the difficulty of the single model is overfitting,then Bagging is the best option
+
+>If the problem is that the single model gets a very low performance that than the Boosting could generate a combined model by lowering the  errors
+
+Q8)
+
+Random forests technique involves sampling of the input data with replacement (bootstrap sampling). In this sampling, about one thrird of the data is not used for training and can be used to testing.These are called the out of bag samples. Error estimated on these out of bag samples is the out of bag error.
+
+Q9)
+
+Croos Validation is the technique where we reserve the particular sample of the dataset on which you do not train the model. That reserver test is used for testiong of the model
+
+Methods used for Cross validation
+
+>LOOCV(Leave one out cross validation)
+
+>K-fold Cross Validation
+
+...> K-Fold Cross Validation
+>Below are the steps for it:
+>Randomly split your entire dataset into k”folds”
+>For each k-fold in your dataset, build your model on k – 1 folds of the dataset. ...
+>Record the error you see on each of the predictions.
+>Repeat this until each of the k-folds has served as the test set.
+
+Q10)
+
+Parameters which define the model architecture are referred to as hyperparameters and thus this process of searching for the ideal model architecture is referred to as hyperparameter tuning.
+
+We use the GridseaarchCV method to tune the hyperparameters as it is dificcult to select manually the values of the hyperparameters which fits the best
+
+The more hyperparameters of an algorithm that you need to tune, the slower the tuning process. Therefore, it is desirable to select a minimum subset of model hyperparameters to search or tune.
+
+Hyperparameters are necessary as they help in finding out the best result of the model and reducing the overfitting or underfitting of the data 
+
+Q11)
+The amount that the weights are updated during training is referred to as the step size or the “learning rate.With a high learning rate we can cover more ground each step, but we risk overshooting the lowest point since the slope of the hill is constantly changing. With a very low learning rate, we can confidently move in the direction of the negative gradient since we are recalculating it so frequently. A low learning rate is more precise, but calculating the gradient is time-consuming, so it will take us a very long time to get to the bottom.
+
+Q12)
+Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. Model with high bias pays very little attention to the training data and oversimplifies the model. It always leads to high error on training and test data.
+
+Variance is the variability of model prediction for a given data point or a value which tells us spread of our data. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before. As a result, such models perform very well on training data but has high error rates on test data.
+
+If our model is too simple and has very few parameters then it may have high bias and low variance. On the other hand if our model has large number of parameters then it’s going to have high variance and low bias. So we need to find the right/good balance without overfitting and underfitting the data.
+This tradeoff in complexity is why there is a tradeoff between bias and variance. An algorithm can’t be more complex and less complex at the same time.
+
+Q13)
+Regularization helps to solve over fitting problem in machine learning. Simple model will be a very poor generalization of data. At the same time, complex model may not perform well in test data due to over fitting. We need to choose the right model in between simple and complex model. Regularization helps to choose preferred model complexity, so that model is better at predicting. Regularization is nothing but adding a penalty term to the objective function and control the model complexity using that penalty term. It can be used for many machine learning algorithms.
+
+Q14)
+Adaboost increases the accuracy by giving more weightage to the target which is misclassified by the model. At each iteration, Adaptive boosting algorithm changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+
+Gradient boosting calculates the gradient (derivative) of the Loss Function with respect to the prediction (instead of the features). Gradient boosting increases the accuracy by minimizing the Loss Function (error which is difference of actual and predicted value) and having this loss as target for the next iteration.
+
+Gradient boosting algorithm builds first weak learner and calculates the Loss Function. It then builds a second learner to predict the loss after the first step. The step continues for third learner and then for fourth learner and so on until a certain threshold is reached.
+
+Q15)
+ Logistic regression is considered a generalized linear model because the outcome always depends on the sum of the inputs and parameters. Or in other words, the output cannot depend on the product (or quotient, etc.) of its parameters!
+ Logistic regression is an algorithm that learns a model for binary classification. A nice side-effect is that it gives us the probability that a sample belongs to class 1 (or vice versa: class 0). Our objective function is to minimize the so-called logistic function Φ (a certain kind of sigmoid function)
+
+
+
+
+
+
+
+
