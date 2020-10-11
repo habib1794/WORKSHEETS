@@ -1,0 +1,31 @@
+Q1)A
+Q2)A
+Q3)A
+Q4)A
+Q5)A
+Q6)C
+Q7)B
+Q8)B
+Q9) Gini index=0.94 and Entropy=0.289
+------------------------------------------------------------------------------------------
+Q10)One of the biggest advantages of random forest over decision tree is the algorithm on which the former one works I.e. Bagging algorithm. It means random forest replaces the data/population used to construct the tree and also the explanatory variables are bootstrapped so that partition is not done on the same important variable. I am telling this because decision trees do not follow this algorithm. It simply keeps on building tree by determining the important variable which depends on homogeneity. Bootstrapping reduces bias and variance both which makes the model more robust and accurate.
+-----------------------------------------------------------------------------------------------
+Q11)Feature scaling is a method used to normalize the range of independent variables or features of data. It is commonly referred to as normalization. Feature scaling impacts non-tree-based models more than tree-based models. Thus, if you want to achieve good results using a non-tree-based model, you should consider normalizing your numerical features.
+The two rechnique are
+A) Min Max Scaling
+B) Standardisation
+------------------------------------------------------------------------------------------
+Q13)An imbalanced dataset is a kind of data distribution where one or more classes have the most number of samples belonging to their class than the other classes. The class distribution in an imbalanced dataset is not uniform among the classes.So a majority of the samples of same class. So Here the accuracy will not play a great role as the we can get the ggod accuracy by using the dummy classifier which predicts on the base of the majority class
+---------------------------------------------------------------------------------------
+Q14) The F-score is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model’s precision and recall.
+
+The F-score is commonly used for evaluating information retrieval systems such as search engines, and also for many kinds of machine learning models, in particular in natural language processing.
+
+F1 Score= 2*(Precision *Recall)/(Precision+Recall)
+-----------------------------------------------------------------------------------------
+Q15) We apply fit on the training dataset and use the transform method on both - the training dataset and the test dataset
+
+Every sklearn's transform's fit() just calculates the parameters (e.g. μ and σ in case of StandardScaler) and saves them as an internal object's state. Afterwards, you can call its transform() method to apply the transformation to any particular set of examples.
+
+fit_transform() joins these two steps and is used for the initial fitting of parameters on the training set x, while also returning the transformed x′. Internally, the transformer object just calls first fit() and then transform() on the same data.
+------------------------------------------------------------------------------------------------
