@@ -1,0 +1,27 @@
+Q1) C
+Q2) A
+Q3) C
+Q4) B
+Q5) C
+Q6) B
+Q7) D
+Q8) B
+Q9) A,B 
+Q10) A,C,D
+Q11)  Linear activation function
+Q12)If your learning rate is set too low, training will progress very slowly as you are making very tiny updates to the weights in your network. However, if your learning rate is set too high, it can cause undesirable divergent behavior in your loss function. 
+
+Q13)
+
+For three inputs the number of combinations of 0 and 1 is 8:
+x1 0 1 0 1 0 1 0 1
+x2 0 0 1 1 0 0 1 1
+x3 0 0 0 0 1 1 1 1
+
+For four inputs the combinations of 0 and 1 is 16
+
+Formula to fiind the number of binary input patterns
+2^n  where n in the number of inputs
+
+Q14)
+Q15)
