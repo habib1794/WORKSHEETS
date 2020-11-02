@@ -1,0 +1,60 @@
+							Statistics– WORKSHEET 4
+
+Q1)A
+Q2)A
+Q3)B
+Q4)C
+Q5)C
+Q6)B
+Q7)B
+Q8)A
+Q9)C
+
+Q10) Normal distribution, also known as the Gaussian distribution, is a probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve.
+
+>A normal distribution is the proper term for a probability bell curve.
+>In a normal distribution the mean is zero and the standard deviation is 1. It has zero skew and a kurtosis of 3.
+>Normal distributions are symmetrical, but not all symmetrical distributions are normal.
+>In reality, most pricing distributions are not perfectly normal.
+
+Q11)To handle this problem is to get rid of the observations that have missing data. However, you will risk losing data points with valuable information. A better strategy would be to impute the missing values. In other words, we need to infer those missing values from the existing part of the data.
+
+Imputation techniques:
+>Imputation using mean or median
+>Imputation using the most frequent data values
+>Imputation using K-NN
+>Imputation Using Multivariate Imputation by Chained Equation 
+
+
+Q12)A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of website visitors at the same time and comparing which variant drives more conversions.Typically in A/B testing, the variant that gives higher conversions is the winning one, and that variant can help you optimize your site for better results.
+
+Q13)Mean imputation of missing data is some scenarios is acceptable but there are some pros and cons of it
+
+Pros:
+Easy and fast.
+Works well with small numerical datasets.
+
+Cons:
+Doesn’t factor the correlations between features. It only works on the column level.
+Will give poor results on encoded categorical features (do NOT use it on categorical features).
+Not very accurate.
+Doesn’t account for the uncertainty in the imputations.
+
+Q14)A regression line is known as the line of best fit that summarizes the general movement of data. It shows the best mean values of one variable corresponding to mean values of the other. The regression line is based on the criteria that it is a straight line that minimizes the sum of squared deviations between the predicted and observed values of the dependent variable.
+y=a+bx
+
+Q15)There are two branches of statistics
+
+1)Descriptive Statistics
+>Central tendency
+>>>Mean
+>>>Median
+>>>Mode
+>Variable measures
+
+2)Inferential statistics
+>>Regression
+>>Analysis of Variance
+>>>>Analysis of Covariance
+>>Statistical significance
+>>Correlation analysis
