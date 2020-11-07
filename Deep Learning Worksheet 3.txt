@@ -1,0 +1,36 @@
+Q1)B
+Q2)C
+Q3)A
+Q4)D
+Q5)C
+Q6)B
+Q7)A
+Q8)A
+Q9)A.B
+Q10)A,B,C,D
+Q11)If we do not apply a Activation function then the output signal would simply be a simple linear function.A linear function is just a polynomial of one degree. a linear equation is easy to solve but they are limited in their complexity and have less power to learn complex functional mappings from data. A Neural Network without Activation function would simply be a Linear regression Model, which has limited power and does not perform good most of the times.
+
+Q12)Forward propagation is where you would give a certain input to your neural network, say an image or text. The network will calculate the output by propagating the input signal through its layers. In other words, the output form one layer becomes the input to the next one, where the output from the last one is the “answer”.
+
+In order to do that accurately, the network needs to be trained. This is done through backpropagation. Basically, during training all the parameters of the network’s layers need to be updated (“optimized”). For this reason, the network needs to know in what “direction” the update should go thus it needs to calculate the so-called gradient with respect to a function known as the loss function, which is a way of saying how “wrong” or “incorrect” the network still is, so hopefully it becomes better next time. Since finding the gradients of all the parameters with respect to this loss function is a complex equation involving the so-called “chain rule”, in computation it is being propagated, where every layer adds its own contribution to that gradient, starting from the last one 
+
+Q13)
+
+Batch Gradient:  In Batch Gradient Descent, all the training data is taken into consideration to take a single step. We take the average of the gradients of all the training examples and then use that mean gradient to update our parameters. So that’s just one step of gradient descent in one epoch.
+
+Stochastic Batch Gradient:  In Stochastic Gradient Descent (SGD), we consider just one example at a time to take a single step.SGD can be used for larger datasets. It converges faster when the dataset is large as it causes updates to the parameters more frequently.
+
+Mini Batch- Since in SGD we use only one example at a time, we cannot implement the vectorized implementation on it. This can slow down the computations. To tackle this problem, a mixture of Batch Gradient Descent and SGD is used.
+Neither we use all the dataset all at once nor we use the single example at a time. We use a batch of a fixed number of training examples which is less than the actual dataset and call it a mini-batch. Doing this helps us achieve the advantages of both the former variants we saw.
+
+Q14)
+Mini Batch Gradient Descent is most commonly used in practice.
+
+Easily fits in the memory
+It is computationally efficient
+Benefit from vectorization
+If stuck in local minimums, some noisy steps can lead the way out of them
+Average of the training samples produces stable error gradients and convergence
+
+Q15)
+Transfer learning make use of the knowledge gained while solving one problem and applying it to a different but related problem.
