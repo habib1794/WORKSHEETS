@@ -1,0 +1,18 @@
+Q1)C
+Q2)C
+Q3)B
+Q4)A,B
+Q5)B,C
+Q6)A
+Q7)A,B
+Q8)C
+Q9)B
+Q10)D
+Q11)C
+Q12)A
+Q13)C
+Q14)B
+Q15)find()- It just returns the result when the searched element is found in the page.And the return type will be <class 'bs4.element.Tag'>.
+
+find_all()- It returns all the matches (i.e) it scans the entire document and returns all the results and the return type will be <class 'bs4.element.ResultSet'>
+
