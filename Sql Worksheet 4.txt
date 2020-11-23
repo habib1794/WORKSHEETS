@@ -1,0 +1,31 @@
+Q1) select avg(quantityOrdered),shippedDate from orders innerjoin orderdetails  on order.orderNumber=orderdetails.orderNumber group by shippedDate
+
+Q2) select avg(quantityOrdered),orderDate  from orders innerjoin orderdetails  on order.orderNumber=orderdetails.orderNumber group by orderDate
+
+Q3) select productName from products where MSRP=min(MSRP)
+
+Q4) select productName from products where quantityInStock=max(quantityInStock)
+
+Q5) select customerName from customers innerjoin payments on customers.customerNumber=payments.customerNumber where amount=max(amount)
+
+Q6) select productName from products innerjoin orderdetails on products.productcode=orderdetails.productcode where quantityOrdered=max(quantityOrdered)
+
+Q7) select customerNumber,customerName from customers where city ='Melbourne'
+
+Q8) select customerName from customers where customerName like 'N%'
+
+Q9) select customerName from customers where phone like '^7.*%' and city='Las Vegas'
+
+Q10) select customerName from customers where creditLimit<1000 and city in ('Las Vegas','Nantes','Stavern')
+
+Q11) select orderNumber from orderdetails innejoin orders on orderdetails.orderNumber=order.orderNumber where quantityOrdered<10
+
+Q12) select orderNumber from orders innerjoin customers on orders.customerNumber=customers.customerNumber where customerName like 'N%'
+
+Q13) select customerName from customers innerjoin orders on orders.customerNumber=customers.customerNumber where orders.status in ('Disputed')
+
+Q14) select customerName from customers innerjoin payments on customers.customerNumber=payments.customerNumber where checkNumber like 'H%' and paymentDate='2004-10-19'
+
+Q15) select checkNumber from payments where amount>1000
+
+

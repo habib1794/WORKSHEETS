@@ -1,0 +1,30 @@
+Q1) B
+Q2) C
+Q3) B
+Q4) A
+Q5) C
+Q6) B
+Q7) D
+Q8) A
+Q9) A,B ,D
+Q10) A,B,D
+Q11) 
+Compiler convert high level program to its machine or CPU instruction sets I,e machine bytecode. Therefore to do this compiler checks for its syntax first and convert whole program to machine or CPU understandable bytecode.
+Interpreters work differently , they take each expression or line of program and convert to machine code and execute it. Therefore if any syntax error in some line of interpreted language, you will get error only when that line is encountered.
+
+Q12) PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages.
+
+Q13)To remove all trailing and leading whitespace in a string, we can use the method strip() in String class that gets rid of both these whitespaces
+
+Q15)n=int(input('Enter the number'))
+sum=0
+temp=n
+while(n>0):
+    m=n%10
+    sum=sum*10+ m*m*m
+    n=n//10
+    
+if(sum==temp):
+    print("The number is Armstrong number")
+else:
+    print("The number is not Armstrong  number")
